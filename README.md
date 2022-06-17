@@ -37,7 +37,4 @@ Deployment Image found in Deployment ScreenShots folder
 Prevent requests without valid authentication headers.
 Bearer token Imcluded in Postman collection under Variable {{Token}}
 
-### Custom Domain Name
-
-Add your own domain name and have it point to the running services (try adding a subdomain name to point to the processing server)
 
