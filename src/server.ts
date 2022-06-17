@@ -17,8 +17,8 @@ function requireAuth(req: Request, res: Response, next: NextFunction) {
   }
 
   const token: string = tokenBearer[1];
-
-  return jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
+//process.env.JWT_SECRET
+  return jwt.verify(token, 'notsospecificsecret', (err, decoded) => {
     if (err) {
       return res.status(500).send({ auth: false, message: 'Failed to authenticate.' });
     }
@@ -53,7 +53,7 @@ function requireAuth(req: Request, res: Response, next: NextFunction) {
   /**************************************************************************** */
 
   //! END @TODO1
-  app.get("/filteredimage",async (req: Request, res: Response) => {
+  app.get("/filteredimage",requireAuth,async (req: Request, res: Response) => {
     try {
       let { image_url } = req.query;
       if (!image_url) {
@@ -69,7 +69,7 @@ function requireAuth(req: Request, res: Response, next: NextFunction) {
         .send('Unable to download image from source')
     }
   });
-  app.get("/Invertedimage",async (req: Request, res: Response) => {
+  app.get("/Invertedimage",requireAuth ,async (req: Request, res: Response) => {
     try {
       let { image_url } = req.query;
       if (!image_url) {
