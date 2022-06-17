@@ -1,0 +1,628 @@
+{
+	"info": {
+		"_postman_id": "501eef31-0e25-4a47-9d4f-e8c011748cbd",
+		"name": "image Filtering Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Inverted local ",
+			"item": [
+				{
+					"name": "Inverted Success",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{HOST}}/Invertedimage?image_url=https://images.unsplash.com/photo-1653161652704-d53d7130d718?ixlib=rb-1.2.1%26ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto=format%26fit=crop%26w=464%26q=80",
+							"protocol": "http",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"Invertedimage"
+							],
+							"query": [
+								{
+									"key": "image_url",
+									"value": "https://images.unsplash.com/photo-1653161652704-d53d7130d718?ixlib=rb-1.2.1%26ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto=format%26fit=crop%26w=464%26q=80"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inverted No auth",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{HOST}}/Invertedimage?image_url=https://images.unsplash.com/photo-1653161652704-d53d7130d718?ixlib=rb-1.2.1%26ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto=format%26fit=crop%26w=464%26q=80",
+							"protocol": "http",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"Invertedimage"
+							],
+							"query": [
+								{
+									"key": "image_url",
+									"value": "https://images.unsplash.com/photo-1653161652704-d53d7130d718?ixlib=rb-1.2.1%26ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto=format%26fit=crop%26w=464%26q=80"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inverted No Success",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{HOST}}/filteredimage?image_url=https://en.wikipedia.org/wiki/File:Two_hand_drummers,_both_wearing_sunglasses,_about_1966.jpg",
+							"protocol": "http",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"filteredimage"
+							],
+							"query": [
+								{
+									"key": "image_url",
+									"value": "https://en.wikipedia.org/wiki/File:Two_hand_drummers,_both_wearing_sunglasses,_about_1966.jpg"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inverted no URL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{HOST}}/filteredimage?image_url=",
+							"protocol": "http",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"filteredimage"
+							],
+							"query": [
+								{
+									"key": "image_url",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "More playing on Jimp\r\n"
+		},
+		{
+			"name": "Inverted Elastic ",
+			"item": [
+				{
+					"name": "Inverted Success",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{EBHOST}}/Invertedimage?image_url=https://images.unsplash.com/photo-1653161652704-d53d7130d718?ixlib=rb-1.2.1%26ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto=format%26fit=crop%26w=464%26q=80",
+							"protocol": "http",
+							"host": [
+								"{{EBHOST}}"
+							],
+							"path": [
+								"Invertedimage"
+							],
+							"query": [
+								{
+									"key": "image_url",
+									"value": "https://images.unsplash.com/photo-1653161652704-d53d7130d718?ixlib=rb-1.2.1%26ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto=format%26fit=crop%26w=464%26q=80"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inverted No Auth",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{EBHOST}}/Invertedimage?image_url=https://images.unsplash.com/photo-1653161652704-d53d7130d718?ixlib=rb-1.2.1%26ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto=format%26fit=crop%26w=464%26q=80",
+							"protocol": "http",
+							"host": [
+								"{{EBHOST}}"
+							],
+							"path": [
+								"Invertedimage"
+							],
+							"query": [
+								{
+									"key": "image_url",
+									"value": "https://images.unsplash.com/photo-1653161652704-d53d7130d718?ixlib=rb-1.2.1%26ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto=format%26fit=crop%26w=464%26q=80"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inverted No Success",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{EBHOST}}/filteredimage?image_url=https://en.wikipedia.org/wiki/File:Two_hand_drummers,_both_wearing_sunglasses,_about_1966.jpg",
+							"protocol": "http",
+							"host": [
+								"{{EBHOST}}"
+							],
+							"path": [
+								"filteredimage"
+							],
+							"query": [
+								{
+									"key": "image_url",
+									"value": "https://en.wikipedia.org/wiki/File:Two_hand_drummers,_both_wearing_sunglasses,_about_1966.jpg"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inverted No URL",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{EBHOST}}/filteredimage?image_url=",
+							"protocol": "http",
+							"host": [
+								"{{EBHOST}}"
+							],
+							"path": [
+								"filteredimage"
+							],
+							"query": [
+								{
+									"key": "image_url",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "More playing on Jimp\r\n",
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Filtered local",
+			"item": [
+				{
+					"name": "Filtered Success",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{HOST}}/filteredimage?image_url=https://images.unsplash.com/photo-1653161652704-d53d7130d718?ixlib=rb-1.2.1%26ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto=format%26fit=crop%26w=464%26q=80",
+							"protocol": "http",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"filteredimage"
+							],
+							"query": [
+								{
+									"key": "image_url",
+									"value": "https://images.unsplash.com/photo-1653161652704-d53d7130d718?ixlib=rb-1.2.1%26ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto=format%26fit=crop%26w=464%26q=80"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filtered No AUTH",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{HOST}}/filteredimage?image_url=https://images.unsplash.com/photo-1653161652704-d53d7130d718?ixlib=rb-1.2.1%26ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto=format%26fit=crop%26w=464%26q=80",
+							"protocol": "http",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"filteredimage"
+							],
+							"query": [
+								{
+									"key": "image_url",
+									"value": "https://images.unsplash.com/photo-1653161652704-d53d7130d718?ixlib=rb-1.2.1%26ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto=format%26fit=crop%26w=464%26q=80"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filtered no Success",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{HOST}}/filteredimage?image_url=https://en.wikipedia.org/wiki/File:Two_hand_drummers,_both_wearing_sunglasses,_about_1966.jpg",
+							"protocol": "http",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"filteredimage"
+							],
+							"query": [
+								{
+									"key": "image_url",
+									"value": "https://en.wikipedia.org/wiki/File:Two_hand_drummers,_both_wearing_sunglasses,_about_1966.jpg"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filtered no URL",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{HOST}}/filteredimage?image_url=",
+							"protocol": "http",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"filteredimage"
+							],
+							"query": [
+								{
+									"key": "image_url",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbGxvQGdtYWlsLmNvbSIsInBhc3N3b3JkX2hhc2giOiJOb3RZZXRJbXBsZW1lbnRlZCIsImNyZWF0ZWRBdCI6IjIwMjItMDYtMTdUMjA6MjQ6NTMuMjgxWiIsInVwZGF0ZWRBdCI6IjIwMjItMDYtMTdUMjA6MjQ6NTMuMjgxWiIsImlhdCI6MTY1NTQ5NzQ5M30.zG9s6hml21gUXBpSdgtbJBOZQ8sRePJM8Tvf6LPox3s",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Filtered Elastic",
+			"item": [
+				{
+					"name": "Success",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{EBHOST}}/filteredimage?image_url=https://images.unsplash.com/photo-1653161652704-d53d7130d718?ixlib=rb-1.2.1%26ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto=format%26fit=crop%26w=464%26q=80",
+							"protocol": "http",
+							"host": [
+								"{{EBHOST}}"
+							],
+							"path": [
+								"filteredimage"
+							],
+							"query": [
+								{
+									"key": "image_url",
+									"value": "https://images.unsplash.com/photo-1653161652704-d53d7130d718?ixlib=rb-1.2.1%26ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto=format%26fit=crop%26w=464%26q=80"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NO Auth",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{EBHOST}}/filteredimage?image_url=https://images.unsplash.com/photo-1653161652704-d53d7130d718?ixlib=rb-1.2.1%26ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto=format%26fit=crop%26w=464%26q=80",
+							"protocol": "http",
+							"host": [
+								"{{EBHOST}}"
+							],
+							"path": [
+								"filteredimage"
+							],
+							"query": [
+								{
+									"key": "image_url",
+									"value": "https://images.unsplash.com/photo-1653161652704-d53d7130d718?ixlib=rb-1.2.1%26ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto=format%26fit=crop%26w=464%26q=80"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "No Success",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{EBHOST}}/filteredimage?image_url=https://en.wikipedia.org/wiki/File:Two_hand_drummers,_both_wearing_sunglasses,_about_1966.jpg",
+							"protocol": "http",
+							"host": [
+								"{{EBHOST}}"
+							],
+							"path": [
+								"filteredimage"
+							],
+							"query": [
+								{
+									"key": "image_url",
+									"value": "https://en.wikipedia.org/wiki/File:Two_hand_drummers,_both_wearing_sunglasses,_about_1966.jpg"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "No URL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{HOST}}/filteredimage?image_url=",
+							"protocol": "http",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"filteredimage"
+							],
+							"query": [
+								{
+									"key": "image_url",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{Token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "HOST",
+			"value": "localhost:8082"
+		},
+		{
+			"key": "EBHOST",
+			"value": "udagram-image-filter-streakl-dev.us-east-1.elasticbeanstalk.com"
+		},
+		{
+			"key": "Token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbG9AZ21haWwuY29tIiwicGFzc3dvcmRfaGFzaCI6IiQyYiQxMCQvN09YV3JGQ0wxbm94NURSRWpZZFlPY2VuT1UzbmFneFBYU094SG1KWDgwNzAuWEd0aGNGRyIsImNyZWF0ZWRBdCI6IjIwMjItMDYtMTdUMjA6NDY6NDIuMjY0WiIsInVwZGF0ZWRBdCI6IjIwMjItMDYtMTdUMjA6NDY6NDIuMjY2WiIsImlhdCI6MTY1NTQ5ODgxNn0.tvwAV5YUQ4E4sdQz35AEcK5HGrKJ1HnXRywyIB1wHjQ"
+		}
+	]
+}

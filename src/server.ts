@@ -19,7 +19,7 @@ function requireAuth(req: Request, res: Response, next: NextFunction) {
 
   const token: string = tokenBearer[1];
 //process.env.JWT_SECRET
-  return jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
+  return jwt.verify(token,'notsospecificsecret', (err, decoded) => {
     if (err) {
       return res.status(500).send({ auth: false, message: 'Failed to authenticate.' });
     }

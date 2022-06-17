@@ -27,7 +27,9 @@ You'll need to create a new node server. Open a new terminal within the project 
 
 ### Elastic BeanStalk EndPoint
 
-Deployment Image found in Deployment ScreenShots folder
+http://udagram-image-filter-streakl-dev.us-east-1.elasticbeanstalk.com/
+
+Deployment health Image found in Deployment ScreenShots folder
 
 
 ## Stand Out (Optional)
