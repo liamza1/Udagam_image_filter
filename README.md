@@ -16,7 +16,7 @@ THe Image fitler section works on taking a public image adding a filter to it an
   1. a public access image :status(200)
   2. a non public image :status(500)
   3. no image url :status(400)
-  4. no authentication :status()
+  4. no authentication :status(401)
 
 ### Setup Node Environment
 
@@ -35,9 +35,9 @@ Deployment Image found in Deployment ScreenShots folder
 ### Authentication
 
 Prevent requests without valid authentication headers.
-Bearer token Imcluded in Postman collection
+Bearer token Imcluded in Postman collection under Variable {{Token}}
 
 ### Custom Domain Name
 
 Add your own domain name and have it point to the running services (try adding a subdomain name to point to the processing server)
-> !NOTE: Domain names are not included in AWS’ free tier and will incur a cost.
+
